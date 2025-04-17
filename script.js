@@ -7,15 +7,3 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
   });
 });
-window.addEventListener('scroll', function () {
-  const projects = document.querySelectorAll('.project');
-  const windowHeight = window.innerHeight;
-
-  projects.forEach(project => {
-    const projectTop = project.getBoundingClientRect().top;
-
-    if (projectTop < windowHeight - 150) {
-      project.classList.add('fade-in');
-    }
-  });
-});

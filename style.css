@@ -1,135 +1,218 @@
 /* Global Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #fdfdfd; /* Light, clean background */
   color: #333;
 }
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #ff66b2, #ff99cc);
+  background: linear-gradient(135deg, #ff66b2, #ff3399); /* Elegant gradient for header */
   color: white;
-  padding: 50px 0;
+  padding: 40px 60px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 header h1 {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 header p {
   font-size: 1.2rem;
-  margin-top: 10px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
-.navbar a {
+nav a {
+  color: white;
   margin: 0 20px;
-  color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
+nav a:hover {
+  color: #ffccff; /* Lighter pink for hover */
 }
 
-/* Section */
-.section {
-  padding: 80px 20px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Skills Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.skill-card {
-  background: #ff66b2;
-  padding: 20px;
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #ff99cc, #ff66b2); /* Soft pink gradient for hero section */
+  padding: 100px 40px;
   text-align: center;
+}
+
+.hero-section h2 {
+  font-size: 3.5rem;
   color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
-.skill-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* Project Cards */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.project-card {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.project-card h3 {
-  color: #ff66b2;
+.hero-section p {
   font-size: 1.5rem;
-}
-
-.project-card a {
-  color: #ff66b2;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Contact Form */
-form input,
-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-form button {
-  background-color: #ff66b2;
   color: white;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 
-form button:hover {
-  background-color: #ff3385;
+.hero-section button {
+  padding: 12px 35px;
+  font-size: 1.2rem;
+  background: #ff3399; /* Stronger pink for button */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.hero-section button:hover {
+  background: #ff66b2; /* Lighter pink on hover */
+}
+
+/* About, Skills, Portfolio, Contact Sections */
+section {
+  padding: 80px 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #ff3399; /* Main pink color for section headings */
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: 300;
+}
+
+ul li::before {
+  content: "•"; /* Custom bullet point for list items */
+  color: #ff3399;
+  margin-right: 10px;
+}
+
+.project {
+  background: #f8f8f8;
+  padding: 30px;
+  margin: 30px 0;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+  transform: translateY(-10px); /* Hover effect to lift the project card */
+}
+
+.project h3 {
+  color: #ff3399;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.project a {
+  color: #ff3399;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.project a:hover {
+  color: #ff66b2; /* Lighter pink for hover */
+}
+
+/* Contact Section */
+#contact a {
+  color: #ff3399;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  color: #ff66b2;
 }
 
 /* Footer */
 footer {
-  background: #ff66b2;
+  background: #ff3399;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 14px;
+  padding: 30px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Dark Mode (Optional) */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode header {
+  background: linear-gradient(135deg, #ff99cc, #ff66b2);
+}
+
+body.dark-mode .hero-section {
+  background: linear-gradient(135deg, #ff66b2, #ff3399);
+}
+
+body.dark-mode section {
+  background: #444;
+}
+
+body.dark-mode footer {
+  background: #ff3399;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .hero-section button {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .project h3 {
+    font-size: 1.5rem;
+  }
 }

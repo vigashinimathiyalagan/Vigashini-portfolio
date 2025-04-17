@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f4f4;
@@ -13,14 +13,29 @@ header {
   text-align: center;
 }
 
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
 nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 section {
-  padding: 30px 40px;
+  padding: 40px 60px;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
 .project {
@@ -31,31 +46,50 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.project h3 {
+  color: #6200ea;
+  font-size: 1.5rem;
+}
+
 .project a {
   color: #6200ea;
   text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 
 footer {
-  background: #eee;
+  background: #6200ea;
+  color: white;
   padding: 20px 40px;
   text-align: center;
   font-size: 14px;
 }
-/* make sure the image container hides overflow */
-.products .box {
-  overflow: hidden;
+
+ul {
+  list-style-type: none;
 }
 
-/* smooth transition when scaling */
-.products .box img {
-  transition: transform 0.5s ease;
-  /* optional: hint cursor */
-  cursor: zoom-in;
+ul li {
+  font-size: 1.1rem;
 }
 
-/* on hover, zoom the image up */
-.products .box:hover img {
-  transform: scale(1.1);
+ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
+footer p {
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

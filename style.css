@@ -42,3 +42,20 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+/* make sure the image container hides overflow */
+.products .box {
+  overflow: hidden;
+}
+
+/* smooth transition when scaling */
+.products .box img {
+  transition: transform 0.5s ease;
+  /* optional: hint cursor */
+  cursor: zoom-in;
+}
+
+/* on hover, zoom the image up */
+.products .box:hover img {
+  transform: scale(1.1);
+}
+

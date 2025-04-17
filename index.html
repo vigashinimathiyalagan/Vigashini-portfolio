@@ -2,75 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vigashini | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vigashini | Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>Vigashini M</h1>
-    <p>Frontend Developer | B.Tech in CSBS | Sethu Institute of Technology</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Vigashini M</h1>
+      <p>Frontend Developer | UI/UX Enthusiast</p>
+      <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi! I'm Vigashini, a Computer Science and Business Systems student passionate about frontend development and creative UI/UX. I love building interactive web interfaces and exploring new design ideas that improve user experience.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Python & C Programming</li>
-      <li>Django, SQLite</li>
-      <li>Figma, Adobe Photoshop</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>AR-Based Plant Shopping System</h3>
-      <p>An interactive plant shopping system that allows users to preview plants in augmented reality using WebAR. Built using Django, Three.js, and SQLite.</p>
-    </div>
-
-    <div class="project">
-      <h3>BookSky Project</h3>
-      <p>A mini book management system built with HTML, CSS, and JavaScript. It allows users to add, view, and delete book entries through a clean UI with popup interaction.</p>
-      <a href="https://vigashinimathiyalagan.github.io/BOOKSKY/" target="_blank">View Project</a>
-    </div>
-
-    <div class="project">
-      <h3>Serum Product Website</h3>
-      <p>A clean and elegant skincare serum website showcasing product features and promoting the brand.</p>
-      <a href="https://vigashinimathiyalagan.github.io/Serum-Site/" target="_blank">View Project</a>
-    </div>
-
-    <div class="project">
-      <h3>Interactive Digital Art Gallery</h3>
-      <p>A modern digital art gallery website showcasing curated artworks with an interactive and aesthetic layout.</p>
-      <a href="https://vigashinimathiyalagan.github.io/Interactive-Digital-Art-Gallery/" target="_blank">View Project</a>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I am Vigashini, a passionate frontend developer skilled in crafting responsive, user-friendly websites and web applications. With a background in computer science, I love creating innovative solutions and improving user experiences through beautiful, functional designs.</p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:vigashinimathiyalagan@gmail.com">vigashinimathiyalagan@gmail.com</a></p>
-    <p>Phone: +91 7200866826</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/vigashini-mathiyalagan-5256b7273/" target="_blank">Vigashini Mathiyalagan</a></p>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML, CSS, JavaScript</div>
+        <div class="skill-card">React, Vue.js</div>
+        <div class="skill-card">Figma, Adobe XD</div>
+        <div class="skill-card">Node.js, Express</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>AR Plant Shopping System</h3>
+          <p>An interactive plant shopping system using WebAR. Built with Django and Three.js.</p>
+          <a href="#">View Project</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>BookSky Project</h3>
+          <p>A mini book management system built with HTML, CSS, and JavaScript.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="mailto:vigashinimathiyalagan@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    © 2025 Vigashini M. Designed with 💜
+    <div class="container">
+      <p>© 2025 Vigashini M. All Rights Reserved</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-

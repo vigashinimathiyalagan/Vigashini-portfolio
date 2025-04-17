@@ -2,12 +2,12 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: #fff;
   color: #333;
 }
 
 header {
-  background: #6200ea;
+  background: #ff66b2; /* Pink Color */
   color: white;
   padding: 20px 40px;
   text-align: center;
@@ -39,7 +39,7 @@ section {
 }
 
 .project {
-  background: white;
+  background: #fff;
   padding: 20px;
   margin: 20px 0;
   border-radius: 10px;
@@ -47,12 +47,12 @@ section {
 }
 
 .project h3 {
-  color: #6200ea;
+  color: #ff66b2; /* Pink Color */
   font-size: 1.5rem;
 }
 
 .project a {
-  color: #6200ea;
+  color: #ff66b2;
   text-decoration: none;
   font-size: 1.1rem;
 }
@@ -62,7 +62,7 @@ section {
 }
 
 footer {
-  background: #6200ea;
+  background: #ff66b2; /* Pink Color */
   color: white;
   padding: 20px 40px;
   text-align: center;
@@ -92,4 +92,13 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.project {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.project.fade-in {
+  opacity: 1;
 }

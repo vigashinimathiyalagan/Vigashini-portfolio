@@ -2,87 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vigashini | Frontend Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vigashini | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header Section -->
   <header>
     <div class="container">
       <h1>Vigashini M</h1>
-      <p>Frontend Developer | UI/UX Enthusiast</p>
-      <nav class="navbar">
+      <p>Frontend Designer & Developer</p>
+      <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I create beautiful, functional websites that bring your ideas to life.</p>
+      <button onclick="window.location.href='#portfolio'">See My Work</button>
+    </div>
+  </section>
+
   <!-- About Section -->
-  <section id="about" class="section">
+  <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>Hello! I am Vigashini, a passionate frontend developer skilled in crafting responsive, user-friendly websites and web applications. With a background in computer science, I love creating innovative solutions and improving user experiences through beautiful, functional designs.</p>
+      <p>Hi, I'm Vigashini, a passionate Frontend Designer and Developer. I specialize in crafting interactive, user-friendly, and beautiful websites with clean code and modern design principles.</p>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="section">
+  <section id="skills">
     <div class="container">
       <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">HTML, CSS, JavaScript</div>
-        <div class="skill-card">React, Vue.js</div>
-        <div class="skill-card">Figma, Adobe XD</div>
-        <div class="skill-card">Node.js, Express</div>
-      </div>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Angular</li>
+        <li>UI/UX Design</li>
+        <li>Figma, Adobe XD, Sketch</li>
+        <li>Responsive Web Design</li>
+        <li>Web Animations & Interactivity</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
+  <!-- Portfolio Section -->
+  <section id="portfolio">
     <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card">
-          <h3>AR Plant Shopping System</h3>
-          <p>An interactive plant shopping system using WebAR. Built with Django and Three.js.</p>
-          <a href="#">View Project</a>
-        </div>
-        <!-- Project 2 -->
-        <div class="project-card">
-          <h3>BookSky Project</h3>
-          <p>A mini book management system built with HTML, CSS, and JavaScript.</p>
-          <a href="#">View Project</a>
-        </div>
+      <h2>Portfolio</h2>
+      <div class="project">
+        <h3>Plant Shopping AR System</h3>
+        <p>An interactive plant shopping system with AR, built using WebAR, Django, and Three.js.</p>
+        <a href="https://your-link.com" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Serum Product Website</h3>
+        <p>A clean, elegant website for showcasing beauty products.</p>
+        <a href="https://vigashinimathiyalagan.github.io/Serum-Site/" target="_blank">View Project</a>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section">
+  <section id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <form action="mailto:vigashinimathiyalagan@gmail.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <p>Email: <a href="mailto:vigashinimathiyalagan@gmail.com">vigashinimathiyalagan@gmail.com</a></p>
+      <p>Phone: +91 7200866826</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vigashini-mathiyalagan-5256b7273/" target="_blank">Vigashini Mathiyalagan</a></p>
     </div>
   </section>
 
+  <!-- Footer Section -->
   <footer>
-    <div class="container">
-      <p>© 2025 Vigashini M. All Rights Reserved</p>
-    </div>
+    <p>© 2025 Vigashini M. Designed </p>
   </footer>
 
   <script src="script.js"></script>

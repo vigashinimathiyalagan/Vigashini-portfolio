@@ -1,110 +1,135 @@
-/* General body styling */
+/* Global Styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background: #fff;
   color: #333;
 }
 
-/* Header styling */
+/* Header */
 header {
-  background: #ff66b2; /* Pink Color */
+  background: linear-gradient(135deg, #ff66b2, #ff99cc);
   color: white;
-  padding: 20px 40px;
+  padding: 50px 0;
   text-align: center;
 }
 
 header h1 {
   font-size: 3rem;
+  font-weight: 600;
 }
 
 header p {
   font-size: 1.2rem;
+  margin-top: 10px;
 }
 
-/* Navigation Styling */
-nav a {
+.navbar a {
+  margin: 0 20px;
   color: white;
-  margin: 0 15px;
   text-decoration: none;
-  font-size: 1rem;
+  font-weight: 600;
 }
 
-nav a:hover {
+.navbar a:hover {
   text-decoration: underline;
 }
 
-/* Section Styling */
-section {
-  padding: 40px 60px;
-  margin: 20px auto;
+/* Section */
+.section {
+  padding: 80px 20px;
+}
+
+.container {
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Project Styling */
-.project {
-  background: #fff;
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  background: #ff66b2;
   padding: 20px;
-  margin: 20px 0;
+  text-align: center;
+  color: white;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  opacity: 0; /* Set initial opacity to 0 */
-  transition: opacity 1s ease-in-out; /* Smooth fade-in transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.project h3 {
-  color: #ff66b2; /* Pink Color */
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Cards */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card h3 {
+  color: #ff66b2;
   font-size: 1.5rem;
 }
 
-.project a {
+.project-card a {
   color: #ff66b2;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-weight: 600;
 }
 
-.project a:hover {
-  text-decoration: underline;
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Styling */
-footer {
-  background: #ff66b2; /* Pink Color */
+/* Contact Form */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #ff66b2;
   color: white;
-  padding: 20px 40px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff3385;
+}
+
+/* Footer */
+footer {
+  background: #ff66b2;
+  color: white;
   text-align: center;
+  padding: 20px;
   font-size: 14px;
-}
-
-/* List Styling */
-ul {
-  list-style-type: none;
-}
-
-ul li {
-  font-size: 1.1rem;
-}
-
-ul li:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-/* Footer text styling */
-footer p {
-  font-size: 1.2rem;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Fade-in effect for projects */
-.project.fade-in {
-  opacity: 1; /* Set opacity to 1 when it fades in */
 }

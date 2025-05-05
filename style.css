@@ -319,6 +319,11 @@ button:hover, .card:hover {
 .hero-image img:hover {
   transform: scale(1.1); /* Slightly zooms in the image on hover */
 }
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 150px; /* Adjusts the width on smaller screens */
+  }
+}
 
 
 

@@ -341,29 +341,28 @@ button:hover, .card:hover {
     width: 150px; /* Adjusts the width on smaller screens */
   }
 }
-/* Portfolio Section */
+/* Fix for Portfolio Section */
 #portfolio {
-  padding: 40px 20px; /* Reduced padding */
-  background-color: #fff; /* Keep your theme */
+  padding: 30px 20px;        /* Reduce vertical space */
+  margin: 0 auto;            /* Center the content */
+  max-width: 1200px;         /* Limit the width */
   text-align: center;
+  min-height: auto;
+
 }
 
-/* Heading inside Portfolio */
+/* Fix for the Header (h2) inside Portfolio */
 #portfolio h2 {
-  font-size: 2rem;  /* Smaller font size */
-  margin-bottom: 10px;
+  font-size: 2rem;           /* Slightly smaller heading */
+  margin-bottom: 20px;
 }
 
-/* Optional: Add this to reduce white space around the section */
-section {
-  margin-bottom: 40px;
+/* Remove extra spacing below if there’s one */
+#portfolio p {
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
-.container,
-.section,
-.wrapper {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 
 
 

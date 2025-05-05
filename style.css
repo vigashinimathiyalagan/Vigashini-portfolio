@@ -69,13 +69,16 @@ nav a:hover {
 
 /* HERO SECTION */
 #hero {
-  padding: 40px 20px; /* Reduced padding for better fit */
-  min-height: 50vh; /* Adjusted to a viewport height fraction */
+  padding: 40px 20px;
+  min-height: unset; /* Ensure it's not fixed to full viewport height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-height: 85vh; /* Prevents it from becoming too tall */
+  overflow: hidden; /* Ensures no content spills */
 }
+
 
 /* HERO TEXT */
 /* HERO SECTION */
@@ -95,25 +98,25 @@ nav a:hover {
   border-radius: 50%;
   margin: 10px 0;
 }
-@media (max-width: 768px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   #hero {
-    padding: 30px 20px;  /* Even smaller padding on mobile */
-    min-height: 40vh;     /* Ensure it's not too tall */
+    padding: 30px 40px;
+    max-height: 80vh;
   }
 
   #hero h1 {
-    font-size: 1.8rem;    /* Smaller font size for header */
+    font-size: 2.2rem;
   }
 
   #hero p {
-    font-size: 0.9rem;    /* Smaller text for better readability */
+    font-size: 1rem;
   }
 
-  #hero img {
-    width: 120px;         /* Smaller image on small screens */
-    height: 120px;
+  .hero-image img {
+    width: 160px;
   }
 }
+
 /* HERO CONTENT FLEX CONTAINER */
 .hero-content {
   display: flex;

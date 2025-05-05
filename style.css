@@ -100,8 +100,8 @@ nav a:hover {
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   #hero {
-    padding: 30px 40px;
-    max-height: 80vh;
+    padding: 20px 30px;
+    max-height: 65vh;
   }
 
   #hero h1 {

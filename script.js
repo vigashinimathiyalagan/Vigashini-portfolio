@@ -45,4 +45,25 @@ document.addEventListener("DOMContentLoaded", () => {
     appearOnScroll.observe(fader);
   });
 });
+const projectCards = document.querySelectorAll(".project-card");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add("show");
+      }, i * 150); // Stagger delay
+    }
+  });
+}, { threshold: 0.1 });
+
+projectCards.forEach(card => observer.observe(card));
+const topBtn = document.getElementById("topBtn");
+window.addEventListener("scroll", () => {
+  topBtn.style.display = window.scrollY > 200 ? "block" : "none";
+});
+topBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 

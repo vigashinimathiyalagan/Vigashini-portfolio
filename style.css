@@ -43,41 +43,58 @@ nav a:hover {
   color: #ffccff; /* Lighter pink for hover */
 }
 
-/* Hero Section */
-.hero-section {
-  background: linear-gradient(135deg, #ff99cc, #ff66b2); /* Soft pink gradient for hero section */
-  padding: 100px 40px;
-  text-align: center;
+/* HERO SECTION */
+#hero {
+  padding: 40px 20px; /* Reduced from large padding like 100px */
+  min-height: auto;   /* Remove fixed large height if any */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-section h2 {
-  font-size: 3.5rem;
-  color: white;
-  font-weight: bold;
+/* HERO CONTENT FLEX CONTAINER */
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* Reduced space between text and image */
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-section p {
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 40px;
-  font-weight: 300;
+/* TEXT CONTENT */
+.hero-content .text {
+  max-width: 500px;
 }
 
-.hero-section button {
-  padding: 12px 35px;
+.hero-content .hero-text {
+  font-size: 2rem; /* Smaller headline */
+  margin-bottom: 10px;
+}
+
+.hero-content .typewriter {
   font-size: 1.2rem;
-  background: #ff3399; /* Stronger pink for button */
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-  font-weight: 500;
+  margin-bottom: 15px;
 }
 
-.hero-section button:hover {
-  background: #ff66b2; /* Lighter pink on hover */
+.hero-content p {
+  font-size: 1rem;
+  line-height: 1.4;
 }
+
+/* IMAGE */
+.hero-image img {
+  width: 180px; /* Smaller image */
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Optional: Button */
+.btn {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+}
+
 
 /* About, Skills, Portfolio, Contact Sections */
 section {

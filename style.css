@@ -358,6 +358,13 @@ button:hover, .card:hover {
 section {
   margin-bottom: 40px;
 }
+.container,
+.section,
+.wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 
 
 

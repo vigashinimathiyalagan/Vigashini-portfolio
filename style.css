@@ -62,6 +62,8 @@ nav a:hover {
 #hero p {
   font-size: 1rem;
   margin-bottom: 20px;
+   max-width: 600px;
+  text-align: center;
 }
 
 /* HERO IMAGE */
@@ -69,7 +71,7 @@ nav a:hover {
   width: 160px;              /* Smaller image */
   height: 160px;
   border-radius: 50%;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 /* HERO CONTENT FLEX CONTAINER */
